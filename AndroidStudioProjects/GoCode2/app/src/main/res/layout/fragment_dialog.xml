@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/invisible">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Codechef"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+
+            android:id="@+id/chef" />
+
+        <Button
+             
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  TopCoder"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+            android:id="@+id/tc" />
+
+        <Button
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Codeforces"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+            android:id="@+id/forces" />
+
+        <Button
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  HackerEarth"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+            android:id="@+id/he" />
+
+        <Button
+
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  HackerRank"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+            android:id="@+id/hr" />
+
+        <Button
+
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Kaggle"
+            android:gravity="left|center"
+            android:background="#FFFFFF"
+            android:id="@+id/kgl" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <Button
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ok"
+            android:text="OK"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

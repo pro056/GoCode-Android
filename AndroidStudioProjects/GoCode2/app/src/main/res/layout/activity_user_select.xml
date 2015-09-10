@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent" android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="25dp"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Update your Profile"
+        android:textColor="#ff373737"
+        android:fontFamily="helvetica"
+        android:textSize="30dp"
+        android:id="@+id/textView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Name"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ff373737"
+            android:id="@+id/withname" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:inputType="textPersonName"
+            android:fontFamily="monospace"
+            android:id="@+id/name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff373737"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Email"
+                android:layout_marginTop="15dp"
+                android:id="@+id/withemail" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Password"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff373737"
+                android:layout_marginTop="15dp"
+                android:id="@+id/withpassword" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:id="@+id/password"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mobile number"
+                android:textColor="#ff373737"
+                android:layout_marginTop="15dp"
+                android:id="@+id/withphone" />
+
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:clickable="true"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:id="@+id/phone"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_gravity="center|top"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Gia"
+            android:elevation="200dp"
+            android:background="@drawable/submit"
+            android:drawableLeft="@drawable/submitb"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

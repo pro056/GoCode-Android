@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.i317409.gocode" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log"
+        android:label="GoCode"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="GoCode"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/Login"
+            android:theme="@style/ActionBarTheme" >
+
+        </activity>
+        <activity
+            android:name=".userSelect"
+            android:label="Set up Profile"
+            android:theme="@style/ActionBarTheme" >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".UserProfile"
+            android:label="My Profile"
+            android:theme="@style/ActionBarTheme" >
+        </activity>
+        <activity
+            android:name=".ContestsPage"
+            android:label="Contests"
+            android:theme="@style/ActionBarTheme" >
+        </activity>
+
+    </application>
+
+</manifest>
